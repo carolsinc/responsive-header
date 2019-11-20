@@ -12,6 +12,8 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font-family: Ubuntu, sans-serif;
+  font-size: 100%;
+  line-height: 1.3;
 }
 
 *, *::before, *::after {
@@ -57,4 +59,79 @@ nav a:hover {
 
 nav li:hover {
   background-color: #6c8fe0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  nav li {
+  min-width: 50%;
+  }
+
+  header {
+    min-height: 160px;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+  }
+
+  nav li {
+    min-width: 25%;
+  }
+
+  header {
+    min-height: 115px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    display: flex;
+    padding: .75em 0;
+  }
+
+  nav ul {
+    padding-left: 4rem;
+  }
+
+  nav li {
+    display: block;
+    min-width: 30%;
+    padding-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  nav ul {
+    padding-left: 20rem;
+  }
+
 }
