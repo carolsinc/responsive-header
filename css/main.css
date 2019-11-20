@@ -50,6 +50,7 @@ nav a {
 
 nav li {
   padding: .5em .75em;
+  font-size: 1.125rem;
 }
 
 nav a:hover {
@@ -110,16 +111,14 @@ nav li:hover {
   header {
     display: flex;
     padding: .75em 0;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  nav ul {
-    padding-left: 4rem;
-  }
 
   nav li {
     display: block;
-    min-width: 30%;
-    padding-top: 1rem;
+    min-width: 25%;
   }
 
 }
@@ -128,10 +127,6 @@ nav li:hover {
 
   html {
     font-size: 130%;
-  }
-
-  nav ul {
-    padding-left: 20rem;
   }
 
 }
